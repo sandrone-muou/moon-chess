@@ -40,6 +40,10 @@ A web game inspired by Genshin Impact's "Moonlit Chronicles," similar to tic-tac
    ```
 3. Visit `http://localhost:8000` in your browser
 
+## 项目预览（Project Preview）
+
+项目预览页面`https://moonchess.meorain.cn`
+visit`https://moonchess.meorain.cn`
 
 ## 项目结构 (Project Structure)
 
