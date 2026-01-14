@@ -22,16 +22,6 @@ A web game inspired by Genshin Impact's "Moonlit Chronicles," similar to tic-tac
 
 ## 如何使用 (How to Use)
 
-### 方法一：直接打开 (Method 1: Direct Opening)
-
-1. 克隆或下载本项目到本地
-2. 直接在浏览器中打开 `index.html` 文件
-
-1. Clone or download this project to your local machine
-2. Open the `index.html` file directly in your browser
-
-### 方法二：使用本地服务器 (Method 2: Using Local Server)
-
 1. 克隆或下载本项目到本地
 2. 在项目根目录运行本地服务器
    ```bash
