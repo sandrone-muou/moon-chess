@@ -8,27 +8,26 @@ A web game inspired by Genshin Impact's "Moonlit Chronicles," similar to tic-tac
 
 ## 技术实现 (Technical Implementation)
 
-- **前端技术**：原生 HTML、CSS 和 JavaScript
-- **模块化设计**：使用类封装游戏逻辑，代码结构清晰
-- **CSS 动画**：实现棋子放置和闪烁效果
-- **响应式布局**：使用 CSS Grid 和 Flexbox 实现自适应布局
-- **多语言支持**：通过语言包对象实现中英文切换
+- **前端技术**：HTML5, CSS3, JavaScript (ES6+)
+- **响应式设计**：适配不同屏幕尺寸
+- **视觉效果**：CSS动画、过渡效果、发光效果
+- **双语支持**：中文和英文界面切换
+- **AI逻辑**：智能落子策略，包括进攻和防守
+- **用户体验**：流畅的落子动画、清晰的视觉反馈
 
-- **Frontend technology**：Native HTML, CSS, and JavaScript
-- **Modular design**：Using classes to encapsulate game logic, clear code structure
-- **CSS animations**：Implementing piece placement and flashing effects
-- **Responsive layout**：Using CSS Grid and Flexbox to achieve adaptive layout
-- **Multi-language support**：Implementing Chinese-English switching through language pack objects
+- **Frontend Technologies**: HTML5, CSS3, JavaScript (ES6+)
+- **Responsive Design**: Adaptation to different screen sizes
+- **Visual Effects**: CSS animations, transitions, glow effects
+- **Bilingual Support**: Switch between Chinese and English interfaces
+- **AI Logic**: Intelligent move strategies, including offense and defense
+- **User Experience**: Smooth placement animations, clear visual feedback
 
 ## 如何使用 (How to Use)
 
 1. 克隆或下载本项目到本地
 2. 在项目根目录运行本地服务器
    ```bash
-   # 使用 Python
-   python -m http.server 8000
-   
-   # 或使用 Node.js
+   # 使用 Node.js
    npx http-server -p 8000
    ```
 3. 在浏览器中访问 `http://localhost:8000`
@@ -36,10 +35,7 @@ A web game inspired by Genshin Impact's "Moonlit Chronicles," similar to tic-tac
 1. Clone or download this project to your local machine
 2. Run a local server in the project root directory
    ```bash
-   # Using Python
-   python -m http.server 8000
-   
-   # Or using Node.js
+   # using Node.js
    npx http-server -p 8000
    ```
 3. Visit `http://localhost:8000` in your browser
@@ -48,12 +44,13 @@ A web game inspired by Genshin Impact's "Moonlit Chronicles," similar to tic-tac
 ## 项目结构 (Project Structure)
 
 ```
-yueliangqi/
-├── index.html          # 游戏主页面
-├── style.css           # 游戏样式
-├── script.js           # 游戏逻辑
-├── README.md           # 项目说明文件
-└── LICENSE             # 许可证文件
+├── index.html          # 游戏界面
+├── style.css           # 样式文件
+├── game.js             # 游戏核心逻辑
+├── ai.js               # 电脑AI逻辑
+├── app.js              # 网页交互逻辑
+├── package.json        # 项目配置
+└── README.md           # 项目说明
 ```
 
 ## 许可证 (License)
@@ -72,4 +69,4 @@ Welcome to submit Issues and Pull Requests to help improve this project!
 
 **享受游戏乐趣！** 🌙✨
 
-**Enjoy the game!** 🌙✨
+**Enjoy the game!** 

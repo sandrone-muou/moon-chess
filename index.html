@@ -1,68 +1,67 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>月亮棋</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>月亮棋游戏</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="game-container">
-        <h1 class="game-title">月亮棋</h1>
-        
-        <div class="game-info">
-            <div class="rules">
-                <h3>游戏规则</h3>
-                <p>1. 玩家与哥伦比娅交替落子</p>
-                <p>2. 每方最多同时有3个棋子在棋盘上</p>
-                <p>3. 落第3子后，第1子开始闪烁</p>
-                <p>4. 落第4子后，第1子消失</p>
-                <p>5. 先连成一线（横、竖、对角线）者获胜</p>
-            </div>
-            
-            <div class="scoreboard">
-                <h3>分数</h3>
-                <div class="score">
-                    <span class="player-score">玩家: <span id="player-wins">0</span></span>
-                    <span class="computer-score">哥伦比娅: <span id="computer-wins">0</span></span>
-                </div>
-            </div>
-        </div>
-        
-        <div class="game-board" id="game-board">
-            <div class="cell" data-index="0"></div>
-            <div class="cell" data-index="1"></div>
-            <div class="cell" data-index="2"></div>
-            <div class="cell" data-index="3"></div>
-            <div class="cell" data-index="4"></div>
-            <div class="cell" data-index="5"></div>
-            <div class="cell" data-index="6"></div>
-            <div class="cell" data-index="7"></div>
-            <div class="cell" data-index="8"></div>
-        </div>
-        
-        <div class="game-status" id="game-status">
-            轮到玩家落子
-        </div>
-        
-        <div class="modal" id="win-modal">
-            <div class="modal-content">
-                <h2 id="modal-title">游戏结束</h2>
-                <p id="modal-message"></p>
-                <button class="btn" id="modal-close">确定</button>
-            </div>
-        </div>
-        
-        <div class="game-controls">
-            <button class="btn" id="reset-btn">清空分数</button>
-            <button class="btn" id="restart-btn">重置游戏</button>
-            <div class="language-switch">
-                <button class="btn lang-btn" data-lang="zh">中文</button>
-                <button class="btn lang-btn" data-lang="en">English</button>
-            </div>
-        </div>
+  <div class="game-container">
+    <div class="language-selector">
+      <button id="zh-btn" class="lang-btn active">中文</button>
+      <button id="en-btn" class="lang-btn">English</button>
     </div>
     
-    <script src="script.js"></script>
+    <h1 data-lang="title">月亮棋游戏</h1>
+    
+    <div class="rules">
+      <h3 data-lang="rules-title">游戏规则：</h3>
+      <ul>
+        <li data-lang="rule1">1. 玩家与电脑交替落子</li>
+        <li data-lang="rule2">2. 每方最多同时有3个棋子在棋盘上</li>
+        <li data-lang="rule3">3. 落第3子后，第1子开始闪烁</li>
+        <li data-lang="rule4">4. 落第4子后，第1子消失</li>
+        <li data-lang="rule5">5. 先连成一线（横、竖、对角线）者获胜</li>
+      </ul>
+    </div>
+    
+    <div class="board-container">
+      <div class="board" id="board">
+        <div class="cell" data-index="0"></div>
+        <div class="cell" data-index="1"></div>
+        <div class="cell" data-index="2"></div>
+        <div class="cell" data-index="3"></div>
+        <div class="cell" data-index="4"></div>
+        <div class="cell" data-index="5"></div>
+        <div class="cell" data-index="6"></div>
+        <div class="cell" data-index="7"></div>
+        <div class="cell" data-index="8"></div>
+      </div>
+    </div>
+    
+    <div class="game-info">
+      <div class="info-item">
+        <span data-lang="current-turn">当前回合：</span>
+        <span id="current-player" data-lang="player">玩家</span>
+      </div>
+    </div>
+    
+    <div class="controls">
+      <button id="restart-btn" data-lang="restart">重新开始</button>
+    </div>
+  </div>
+  
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <h2 id="modal-title" data-lang="game-over">游戏结束</h2>
+      <p id="modal-message"></p>
+      <button id="modal-btn" data-lang="confirm">确定</button>
+    </div>
+  </div>
+  
+  <script src="game.js"></script>
+  <script src="ai.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
